@@ -19,6 +19,7 @@ public class ConfigManager {
         TELEPORT_DELAY = config.getLong("teleport-delay") * 20;
         ARCHER_TAG_LENGTH = config.getLong("archer-tag-length") * 20;
         ARCHER_TAG_DAMAGE_MULTIPLIER = config.getDouble("archer-tag-multiplier");
+        BARD_RADIUS = config.getInt("bard-radius");
 
 
         FORMATTED_CHAT = translateAlternateColorCodes('&', config.getString("formatted-chat"));
@@ -99,4 +100,5 @@ public class ConfigManager {
     public static String FACTION_FOUNDED;
     public static String TELEPORT_PENDING;
     public static String ARCHER_TAGGED;
+    public static int BARD_RADIUS;
 }
